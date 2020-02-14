@@ -24,7 +24,7 @@ services:
   client:
     build:
       context: ./client
-      dockerfile: ./nginx/Dockerfile.prod
+      dockerfile: frontend/nginx/Dockerfile.prod
       args:
       - API_URL=localhost:1377/api
     volumes:

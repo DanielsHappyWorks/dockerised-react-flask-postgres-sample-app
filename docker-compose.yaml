@@ -21,7 +21,7 @@ services:
   client:
     build:
       context: ./client
-      dockerfile: Dockerfile
+      dockerfile: frontend/Dockerfile
       args:
         - API_URL=localhost:5000/api
     environment:
